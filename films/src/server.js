@@ -11,11 +11,10 @@ server.use("/films", require("./routes"));
 
 //manejo de errores
 server.use("*", (req, res)=>{
-    res.status(404).send("Not Found"); //probar usar el manejador de errores propio
+    res.status(404).send("Not Found"); 
 });
-//manejador de errores
-server.use((err, req, res, next)=>{
-   
+//manejador de errores propio
+server.use((err, req, res, next)=>{   
     res.status(err.statusCode || 500).send({
         error: true,
         message: err.message,
