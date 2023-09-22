@@ -1,6 +1,6 @@
 const server = require("./src/server.js");
 
-const { Character, Film, Planet } = require("./src/database")
+//const { Character, Film, Planet } = require("./src/database")
 // Planet.list().then((res)=>console.log(res))
 // Planet.get(200).then(res=>console.log(res)); 
 // Planet.insert({

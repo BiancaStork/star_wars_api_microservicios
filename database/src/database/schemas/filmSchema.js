@@ -16,11 +16,13 @@ filmSchema.statics.list = async function () {
     .populate("characters",["_id", "name"])
     .populate("planets", ["_id", "name"])
  };
+
  filmSchema.statics.get = async function (id){
     return await this.findById(id)
     .populate("characters",["_id", "name"])
     .populate("planets", ["_id", "name"])
  };
+ 
  filmSchema.statics.insert = async function(character){
     return await this.create(character)
 }
