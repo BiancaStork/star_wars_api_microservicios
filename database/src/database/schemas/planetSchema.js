@@ -10,13 +10,14 @@ const planetSchema = new Schema({
     gravity: String,
     terrain: String,
     surface_water: String,
-    residents: [{String}],
+    residents: [{type:String, ref:"Character"}],
     films: [{type:String, ref:"Film"}]
 
 })
 
 planetSchema.statics.list = async function () {
     return await this.find()
+    .populate("residents",["_id", "name"])
     .populate("films",["_id", "title"])
    
  };
