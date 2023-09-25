@@ -1,7 +1,7 @@
 //const planets = require("./planets.json");
 const axios = require("axios");
-//const url = "http://database:8004/Planet";
-const url = "http://localhost:8004/Planet"
+const url = "http://database:8004/Planet";
+//const url = "http://localhost:8004/Planet"
 
 
 module.exports={
