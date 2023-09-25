@@ -1,7 +1,7 @@
 //const films = require("./films.json");
 const axios = require("axios");
-//const url = "http://database:8004/Film";
-const url = "http://localhost:8004/Film"
+const url = "http://database:8004/Film";
+//const url = "http://localhost:8004/Film"
 
 module.exports={
  list: async ()=>{
@@ -16,7 +16,7 @@ module.exports={
   // throw Error("Hay un Error en la BDD al crear el personaje");
   const { data } = await axios.post(
     url,
-    character
+    film
   );
   return data;
  },
@@ -30,7 +30,7 @@ module.exports={
 upd_data: async (id, character) => {
   const { data } = await axios.put(
     `${url_conn}/${id}`,
-    character
+    film
   );
   return data;
 },
