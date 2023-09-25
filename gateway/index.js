@@ -8,6 +8,7 @@ app.use(morgan("dev"));
 
 //distribuyo las peticiones
 app.use("/characters", createProxyMiddleware({
+    //target:"http://localhost:8001",
     target: "http://characters:8001",  //le indico el puerto donde va a escuchar
     changeOrigin:true,
 }));
@@ -23,8 +24,8 @@ app.use("/planets", createProxyMiddleware({
 }));
 
 app.use("/database", createProxyMiddleware({
-    target: "http://database:8004",  
-    changeOrigin:true,
+    target: "http://database:8004", 
+     changeOrigin:true,
 }));
 
 
