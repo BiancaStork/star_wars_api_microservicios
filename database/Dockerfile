@@ -14,4 +14,4 @@ CMD [ "npm", "start"]
 
 # comandos docker
 # crear imagen --> docker build -t database .
-# run (correr) imagen ---> docker run -p 8004:8004 database
+# run (correr) imagen ---> docker run --network=starwars --name=database -p 8004:8004 database
