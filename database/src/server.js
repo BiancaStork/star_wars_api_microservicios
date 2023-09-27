@@ -6,7 +6,7 @@ const server= express();
 server.use(express.json());
 server.use(morgan("dev"));
 
-server.use("/database", require("./routes"));
+server.use("/", require("./routes"));
 
 //manejo de errores
 server.use("*", (req, res)=>{
