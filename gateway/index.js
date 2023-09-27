@@ -25,8 +25,6 @@ app.use("/planets", createProxyMiddleware({
     changeOrigin:true,
 }));
 
-// 
-
 app.listen(8000, ()=>{
     console.log("Gateway on port 8000")
 })
