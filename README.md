@@ -9,10 +9,10 @@ En este proyecto se implementa una plataforma de microservicios básica,
 q permite crear, buscar, actualizar o eliminar personajes, planetas
 y/o películas
 
-Desarrollado con el Framework Express Js,MongoDB, Mongoose
+Desarrollado con  Express Js,MongoDB, Mongoose
 
 Conformado por 5 aplicaciones independientes,
-intercomectadas estre si vía HTTPRequests
+interconectadas estre si vía HTTPRequests
 -Gateway
 -Characters
 -Films
